@@ -1,0 +1,408 @@
+body {
+	background: url('homeback.jpg');
+	background-size: cover;
+	font-family: 'Merienda One', cursive;
+}
+
+input {
+	outline: none;
+}
+
+button {
+	outline: none !important;
+}
+
+.search-form {
+	float: right;
+    margin-right: 3em;
+    width: 3%;
+    transition: 0.3s ease;
+}
+.search-input {
+	position: relative;
+    background: #f3eeb9;
+    border-radius: 50px;
+    box-shadow: 0px 0px 6px 2px rgba(185, 189, 106, 0.52);
+    /*outline: none !important;*/
+}
+
+.search-input:focus {
+	box-shadow: none;
+	outline: none;
+	color: #495057;
+	border: 1px solid #23c0d2;
+	
+}
+
+.form-control-feedback {
+	position: absolute;
+    margin-top: -1.7em;
+    margin-left: 0.8em;
+  	color: #270202;
+}
+
+.boxCategory {
+	width: 40%;
+}
+
+.category {
+	background-color: #f3eeb9;
+	font-family: 'Sedgwick Ave', cursive;
+	color: #23c0d2;
+	padding: 5px;
+	box-shadow: 0px 2px 6px 4px rgba(114, 113, 130, 0.33);
+	border: none;
+	transition: 0.3s ease;
+	margin-right: 5px;
+	cursor: pointer;
+}
+
+.addCategory {
+
+	background-color:  #580505;
+	font-family: 'Sedgwick Ave', cursive;
+	color: #f3eeb9;
+	border-radius: 5px;
+	box-shadow: 0px 2px 6px 4px rgba(114, 113, 130, 0.33);
+	border: none;
+	transition: 0.3s ease;
+	cursor: pointer;
+	padding: 15px;
+	margin-right: 5px;
+
+}
+
+#plus, #delete {
+	background-color: #580505;
+	float: left;
+	font-family: 'Sedgwick Ave', cursive;
+	color: #f3eeb9;
+	padding: 15px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+	box-shadow: 0px 2px 6px 4px rgba(114, 113, 130, 0.33);
+	margin-right: 5px;
+	border-radius: 5px;
+}
+
+#plus:hover {
+	color: #270202;
+	background-color: #f3eeb9;
+	transform: scale(0.9);
+
+}
+#delete:hover {
+	color: #270202;
+	transform: scale(0.9);
+}
+
+.addCategory:hover {
+	color: #270202;
+	background-color: #f3eeb9;
+	transform: scale(0.9);
+}
+
+.category:hover {
+	color: #270202;
+	background-color: #f3eeb9;
+	transform: scale(0.9);
+}
+.chooseCat {
+	background-color: #23c0d2;
+	font-family: 'Sedgwick Ave', cursive;
+	color: #f3eeb9;
+	border-radius: 5px;
+	font-size: 20px;
+	border: none;
+	height: 27px;
+    line-height: 1.5;
+    padding: 2px;
+}
+
+.smallCat, .assignedCat {
+	background-color: #23c0d2;
+	font-family: 'Sedgwick Ave', cursive;
+	color: #f3eeb9;
+	border-radius: 5px;
+	font-size: 20px;
+	border: none;
+	height: 27px;
+    line-height: 1.5;
+    padding: 2px;
+    
+}
+
+.smallCat, .chooseCat {
+	cursor: pointer;
+	transition: 0.3s ease;
+
+}
+
+.smallCat:hover {
+	color: #270202;
+	background-color: #f3eeb9;
+	transform: scale(0.9);
+	border: 1px solid #580505;
+}
+
+.chooseCat:hover {
+	color: #270202;
+	background-color: #f3eeb9;
+	transform: scale(0.9);
+}
+
+
+/*notes page style*/
+#notes {
+	background: url('notesback.jpg') no-repeat center center fixed;
+	background-size: cover;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+}
+
+#navNotes{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+#logoNotes {
+	font-size: 1em;
+	padding: 0.1em;
+	font-family: 'Sedgwick Ave', cursive;
+}
+
+#signOut {
+	font-size: 0.8em;
+}
+
+#logo {
+	margin-right: 3em;
+	font-size: 2.5em;
+	padding: 0.2em; 
+	font-family: 'Sedgwick Ave', cursive;
+}
+
+.box {
+	margin-left: 1.5em;
+	margin-top: 1.5em; 
+	height: 3.5em;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	height: auto;
+    line-height: 1;
+}
+
+
+.flexBox {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.words {
+    width:28%;
+    margin-top: 30px;
+    margin-left: 3%;
+    margin-right: 2%; 
+    background:red;
+    border-radius:5px;
+    box-shadow: 9px 11px 5px 6px rgba(109, 102, 96, 0.49);
+    padding:1rem 2rem 0rem 3rem;
+    background: -webkit-gradient(linear, 0 0, 0 100%, from(#bbc6cc), color-stop(4%, #f3eeb9)) 0 4px;
+    background-size: 100% 3rem;
+    line-height:3rem;
+    outline: none;
+    height: 1%;
+}
+
+.realtext {
+	outline: none;
+}
+
+#div1 {
+	outline: none;
+}
+
+.bg-dark {
+	background-color: #580505!important;
+}
+.mybutton {
+	font-size: 1.2em;
+	background-color: transparent;
+	border: 2px solid #23c0d2;
+	color: #23c0d2;
+	border-radius: 5px;
+	padding: 10px;
+	text-decoration: none;
+	margin-right: 1em;
+	transition: all 0.3s ease;
+	outline: none;
+}
+
+.mybutton:hover {
+	transform: scale(0.9);
+	color: #ffffff;
+	text-decoration: none;
+	background-color: #23c0d2;
+	outline: none;
+}
+
+.savebutton, .deletebutton {
+	background: none;
+    border: none;
+    float: right;
+    padding: 0;
+	font-weight: bold;
+	color: #23c0d2;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+
+.savebutton {
+	font-size: 1em;
+}
+
+.deletebutton {
+    font-size: 1.1em;
+    margin-right: 3%;
+}
+
+.deletebutton:hover {
+	color: #270202;
+	transform: scale(0.8);
+}
+
+.savebutton:hover {
+	color: #270202;
+	transform: scale(0.8);
+}
+
+
+
+button.navbar-toggler {
+	outline: none;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #23c0d2;
+    border-color: #23c0d2;
+    outline: none;
+    cursor: pointer;
+}
+
+#center {
+	width: 70%;
+}
+
+#centarLogin {
+	width: 30%;
+	padding: 5%;
+}
+
+#registerForm {
+	width: 30%;
+	padding: 5%;
+}
+
+h2 {
+	margin-bottom: 15%;
+}
+
+.myForm {
+	margin: 4em auto;
+	background-color: rgba(206, 37, 37, 0.5);
+    text-align: center;
+    color: #ffffff;
+}
+
+.lead {
+	font-size: 1.7rem;
+}
+
+p {
+	font-size: 1.3rem;
+}
+
+.myText img {
+	border: 1px solid #580505;
+	float: left;
+	margin-right: 3%;
+
+}
+
+.myText h3{
+	font-size: 3em;
+	text-align: left;
+}
+
+.myText p {
+	text-align: left;
+	font-size: 1.1em;
+}
+
+.social {
+	font-size: 1.2em;
+	transition: all 0.3s ease;
+	margin-right: 1%;
+	cursor: pointer;
+}
+
+.social:hover {
+	transform: scale(0.9);
+	color: #580505;
+}
+@media screen and (max-width: 750px){
+
+	.myText img {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	.box {
+		flex-direction: column;
+		margin-left: 0;
+		margin-top: 15px;
+	}
+
+	.search-form {
+		width: 8%;
+		margin-right: 0;
+	}
+	
+	.boxCategory {
+		width: 100%;
+		text-align: center;
+		margin: 10px 0;
+		
+	}
+	.display-3 {
+		font-size: 3rem;
+	}
+
+	.lead {
+		font-size: 1.2rem;
+	}
+
+	p {
+		font-size: 1rem;
+	}
+
+	#centarLogin {
+		width: 60%;
+	}
+
+	.words {
+		width: 90%;
+		margin: 10px auto;
+	}
+
+	.flexBox {
+		flex-direction: column;
+	}
+}
