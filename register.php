@@ -10,21 +10,21 @@
             $email = $db->real_escape_string($_POST['email']); 
             $password = $db->escape_string(password_hash($_POST['password'], PASSWORD_BCRYPT));
             
-            $result = $db->query("SELECT * FROM one WHERE email='$email'") or die($db->error());
+            $result = $db->query("SELECT * FROM users WHERE email='$email'") or die($db->error());
             
             if($result->num_rows > 0){
               $_SESSION['message'] = 'User with this email already exists!';
             }
             else {
             
-              $sql = "INSERT INTO one (email, password,name) "
+              $sql = "INSERT INTO users (email, password,name) "
                   . "VALUES ('$email', '$password','$name')";
                   
               if ($db->query($sql) === true) {
                   $_SESSION[ 'message' ] = "Registration succesful!";
                   $_SESSION['name'] = $_POST['name']; 
                   
-                  $result = $db->query("SELECT * FROM one WHERE email='$email'");
+                  $result = $db->query("SELECT * FROM users WHERE email='$email'");
                   $user = $result->fetch_assoc();
                   $_SESSION['id'] = $user['id'];
                   
@@ -48,7 +48,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Final CS50</title>
+	<title>ProCooking</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Merienda+One|Sedgwick+Ave" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">

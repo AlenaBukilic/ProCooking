@@ -6,7 +6,7 @@
     if (isset($_POST['submit'])) {
     
       $email = $db->real_escape_string($_POST['email']); 
-      $result = $db->query("SELECT * FROM one WHERE email='$email'");
+      $result = $db->query("SELECT * FROM users WHERE email='$email'");
       
       if($result->num_rows == 0){
         $_SESSION['message'] = 'User with this email does not exists!';
@@ -33,7 +33,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Final CS50</title>
+	<title>ProCooking</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Merienda+One|Sedgwick+Ave" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
