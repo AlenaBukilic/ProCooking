@@ -45,7 +45,7 @@ button {
 	width: 40%;
 }
 
-.category {
+.category, .allcategories {
 	background-color: #f3eeb9;
 	font-family: 'Sedgwick Ave', cursive;
 	color: #23c0d2;
@@ -55,6 +55,10 @@ button {
 	transition: 0.3s ease;
 	margin-right: 5px;
 	cursor: pointer;
+}
+
+.allcategories {
+	margin-right: 0;
 }
 
 .addCategory {
@@ -107,6 +111,13 @@ button {
 	background-color: #f3eeb9;
 	transform: scale(0.9);
 }
+
+.allcategories:hover {
+	color: #270202;
+	background-color: #f3eeb9;
+	transform: scale(0.9);
+}
+
 .chooseCat {
 	background-color: #23c0d2;
 	font-family: 'Sedgwick Ave', cursive;

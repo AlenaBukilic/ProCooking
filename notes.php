@@ -107,6 +107,7 @@
     <button type="submit" name="newCat" class="addCategory" id="newCat">Add a category</button>
   </div>
   <form class="boxCategory" method="post" enctype="multipart/form-data" autocomplete="off">
+      <button href='notes.php'  class='allcategories'>All Categories</button>
       <?php
        while($cat=$resultCat->fetch_assoc()){
          echo "<button class='category' type='submit' name='categorySearch' value='$cat[name]'>$cat[name]</button>";
